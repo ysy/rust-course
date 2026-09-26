@@ -21,3 +21,10 @@ copy-js = true
 [output.html.fold]
 enable = true
 level = 0
+
+[output.epub]
+cover-image = "assets/kindle_cover.jpg"
+additional-css = ["theme/kindle.css"]
+use-default-css = false
+no-section-label = false
+curly-quotes = true

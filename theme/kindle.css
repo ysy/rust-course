@@ -1,0 +1,195 @@
+/* Kindle 6-inch E-Ink Screen Optimized Stylesheet for Rust Course */
+
+@page {
+    margin: 5px 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0 4px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 1.0em;
+    line-height: 1.6;
+    color: #111111;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    word-break: break-word;
+}
+
+/* Headings */
+h1 {
+    page-break-before: always;
+    break-before: page;
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #4a5568;
+    color: #000000;
+    text-align: left;
+}
+
+h2 {
+    page-break-after: avoid;
+    break-after: avoid;
+    font-size: 1.25em;
+    line-height: 1.3;
+    margin-top: 1.3em;
+    margin-bottom: 0.4em;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #cbd5e0;
+    color: #1a202c;
+}
+
+h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+    font-size: 1.1em;
+    line-height: 1.35;
+    margin-top: 1.1em;
+    margin-bottom: 0.35em;
+    color: #2d3748;
+}
+
+h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+    font-size: 1.0em;
+    margin-top: 0.9em;
+    margin-bottom: 0.3em;
+    color: #4a5568;
+}
+
+/* Paragraphs & Text */
+p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    margin: 0.55em 0;
+    text-indent: 0;
+    widows: 2;
+    orphans: 2;
+}
+
+/* Code Blocks: Optimized specifically for 6-inch narrow E-ink screens */
+pre {
+    background-color: #f6f7f9 !important;
+    border: 1px solid #d2d6dc;
+    border-left: 3px solid #718096;
+    border-radius: 3px;
+    padding: 0.4em 0.5em;
+    margin: 0.7em 0;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    font-size: 0.82em;
+    line-height: 1.32;
+    color: #0f172a;
+    page-break-inside: auto;
+}
+
+pre code {
+    font-family: "Consolas", "Courier New", "Liberation Mono", monospace !important;
+    font-size: 1.0em !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    display: inline !important;
+}
+
+/* Inline code */
+p code, li code, td code, th code {
+    font-family: "Consolas", "Courier New", monospace !important;
+    font-size: 0.88em !important;
+    background-color: #edf2f7;
+    border: 1px solid #e2e8f0;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin: 0 1px;
+    color: #1a202c;
+    word-break: break-word;
+    vertical-align: baseline;
+}
+
+/* Blockquotes / Notes */
+blockquote {
+    margin: 0.7em 0;
+    padding: 0.4em 0.7em;
+    border-left: 3px solid #4a5568;
+    background-color: #f7fafc;
+    color: #2d3748;
+    font-style: normal;
+}
+
+blockquote p {
+    margin: 0.3em 0;
+}
+
+/* Tables */
+table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse;
+    margin: 0.7em 0;
+    font-size: 0.82em;
+    line-height: 1.35;
+    page-break-inside: avoid;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 3px 5px;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+th {
+    background-color: #edf2f7;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.5em 0;
+    padding-left: 1.4em;
+}
+
+li {
+    margin: 0.25em 0;
+    line-height: 1.5;
+}
+
+/* Images */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0.6em auto;
+    page-break-inside: avoid;
+}
+
+/* Links */
+a {
+    color: #0f172a;
+    text-decoration: underline;
+}
+
+/* Separator */
+hr {
+    border: none;
+    border-top: 1px solid #cbd5e0;
+    margin: 1.2em 0;
+}

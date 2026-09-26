@@ -2,3 +2,13 @@
 book
 Changelog.md
 dump.rdb
+
+# Ebook build artifacts
+dist/
+*.azw3
+*.mobi
+*.pdf
+
+# Python & caches
+__pycache__/
+*.pyc
